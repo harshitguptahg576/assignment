@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proveway Assignment</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <header class="header">
+          <h1 class="header-title">YAY! It’s BOGO</h1>
+        </header>
+
+        <main class="offers">
+          <section class="offer" data-price="18.00" id="offer1">
+            <div class="offer-card">
+              <span class="badge">30% Off</span>
+              <input
+                type="radio"
+                name="offer"
+                id="radio1"
+                onchange="onSelectOffer('offer1')"
+              />
+              <div class="offer-info">
+                <label for="radio1">
+                  <p class="offer-title">
+                    Buy 1 Get 2 <span class="discount">10% Off</span>
+                  </p>
+                  <p class="offer-price">
+                    <span id="price1">$18.00</span> USD
+                    <del class="original-price">$20.00 USD</del>
+                  </p>
+                </label>
+              </div>
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <span>#1</span>
+                <div>
+                  <label for="size1">Size</label>
+                  <select id="size1">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="color1">Colour</label>
+                  <select id="color1">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="offer" data-price="24.00" id="offer2">
+            <div class="offer-card">
+              <span class="badge">30% Off</span>
+              <input
+                type="radio"
+                name="offer"
+                id="radio2"
+                onchange="onSelectOffer('offer2')"
+              />
+              <div class="offer-info">
+                <label for="radio2">
+                  <p class="offer-title">
+                    Buy 2 Get 4 <span class="discount">10% Off</span>
+                  </p>
+                  <p class="offer-price">
+                    <span id="price2">$27.00</span> USD
+                    <del class="original-price">$30.00 USD</del>
+                  </p>
+                </label>
+                <span class="most-popular">Most Popular</span>
+              </div>
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <span>#1</span>
+                <div>
+                  <label for="size1">Size</label>
+                  <select id="size1">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="color1">Colour</label>
+                  <select id="color1">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="selector">
+                <span>#2</span>
+                <div>
+                  <select id="size2">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <select id="color2">
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section
+            class="offer detailed"
+            data-price="36.00"
+            id="offer3"
+            onchange="onSelectOffer('offer3')"
+          >
+            <div class="offer-card">
+              <div class="badge">30% Off</div>
+              <input type="radio" name="offer" id="radio3" checked />
+              <div class="offer-info">
+                <label for="radio3">
+                  <p class="offer-title">
+                    Buy 3 Get 6 <span class="discount">10% Off</span>
+                  </p>
+                  <p class="offer-price">
+                    <span id="price3">$36.00</span> USD
+                    <del class="original-price">$40.00 USD</del>
+                  </p>
+                </label>
+              </div>
+            </div>
+            <div class="selectors">
+              <div class="selector">
+                <span>#1</span>
+                <div>
+                  <label for="size1">Size</label>
+                  <select id="size1">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="color1">Colour</label>
+                  <select id="color1">
+                    <option>Black</option>
+                    <option>White</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="selector">
+                <span>#2</span>
+                <div>
+                  <select id="size2">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <select id="color2">
+                    <option>White</option>
+                    <option>Black</option>
+                    <option>Red</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="selector">
+                <span>#3</span>
+                <div>
+                  <select id="size3">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                  </select>
+                </div>
+                <div>
+                  <select id="color3">
+                    <option>Red</option>
+                    <option>White</option>
+                    <option>Black</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div class="invoice">
+            <p class="free-delivery">Free Delivery</p>
+            <p class="total">Total: <span id="totalPrice">$36.00</span> USD</p>
+          </div>
+          <button class="add-to-cart" onclick="onSubmit()">
+            <span> + </span> &nbsp; Add to Cart
+          </button>
+          <p class="powered-by"><span>Powered by</span> Pumper</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

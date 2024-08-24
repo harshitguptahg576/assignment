@@ -1,0 +1,249 @@
+:root {
+  --primary: #ff6b82;
+  --disabled: #9f9f9f;
+  --white: #fff;
+  --black: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter;
+  background-color: #f8f8f8;
+  color: var(--black);
+  line-height: 1.5;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 442px;
+  padding: 20px 30px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+/* Header Styling */
+.header-title {
+  font-size: 21.08px;
+  font-weight: 700;
+  line-height: 25.51px;
+  text-align: center;
+  color: var(--primary);
+}
+
+/* Offer Card Styling */
+.offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.offer {
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 0px #a7a7a740;
+}
+
+.offer:hover {
+  box-shadow: 0px 5px 10px 0px #a7a7a740;
+}
+
+.offer .selectors {
+  display: none;
+}
+
+.offer-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.offer-card .badge {
+  background-color: var(--primary);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20.16px;
+  text-align: center;
+  color: var(--white);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-right: 2px dotted var(--white);
+  width: 70px;
+  padding: 18px;
+}
+
+.offer-card input {
+  width: 14px;
+  accent-color: #ff597a;
+  cursor: pointer;
+}
+
+.offer-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.offer-info label {
+  font-size: 14.46px;
+  font-weight: 400;
+  line-height: 17.5px;
+  cursor: pointer;
+}
+
+.offer-price {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.offer.detailed {
+  flex-direction: column;
+  padding: 20px;
+  background-color: #fff9fa;
+  border: 1px solid var(--primary);
+  transition: background-color 0.5s ease;
+}
+
+.offer.detailed .badge {
+  display: none;
+}
+
+.most-popular {
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+}
+
+.offer .discount {
+  display: none;
+}
+
+.offer.detailed .discount {
+  display: inline;
+  background-color: var(--primary);
+  color: white;
+  padding: 2px 5px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.52px;
+  border-radius: 3px;
+}
+
+.offer .original-price {
+  display: none;
+}
+
+.offer.detailed .original-price {
+  display: inline;
+  color: #9f9f9f;
+  font-size: 9.94px;
+  font-weight: 400;
+  line-height: 12.03px;
+  text-decoration: line-through;
+}
+
+/* Selectors */
+.offer.detailed .selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
+  padding: 15px 10px;
+}
+
+.selector {
+  display: flex;
+  gap: 7.5px;
+  align-items: end;
+}
+
+.selector span {
+  font-size: 9.04px;
+  font-weight: 400;
+  line-height: 10.94px;
+}
+
+.selector label {
+  display: block;
+  font-size: 9.94px;
+  font-weight: 400;
+  line-height: 12.03px;
+  margin-bottom: 5px;
+}
+
+.selector select {
+  min-width: 65px;
+  padding: 5px;
+  font-size: 10.85px;
+  font-weight: 400;
+  line-height: 13.13px;
+  border-radius: 5px;
+  border-color: #d9d9d9;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 0px 20px;
+}
+
+footer .invoice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.94px;
+}
+
+.free-delivery {
+  color: var(--primary);
+}
+
+.add-to-cart {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.52px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background-color: #ff4764;
+}
+
+.add-to-cart span {
+  font-size: 16px;
+}
+
+.powered-by {
+  margin-top: 15px;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16.94px;
+}
+
+.powered-by span {
+  color: #d4d4d4;
+}
